@@ -1,6 +1,8 @@
 import Banner from "./components/Banner"
+import { Experience } from "./components/Experience"
 import { NavbarTaku } from "./components/Navbar"
 import Team from "./components/Team"
+import Techs from "./components/Techs"
 
 function App() {
 
@@ -12,6 +14,11 @@ function App() {
       <div className="px-32">
         <Banner />
         <Team />
+      </div>
+      <Techs />
+      <Experience />
+      <div className="h-30">
+
       </div>
     </>
   )

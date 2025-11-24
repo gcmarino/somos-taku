@@ -10,10 +10,20 @@
 }  
 
 html, body {
-    @apply min-h-full p-0 m-0  text-white bg-black
+    @apply min-h-full p-0 m-0  text-white bg-black scroll-smooth
 }
 
+@import "tailwindcss";
+ 
+
 @theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+ 
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
   --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1
   var(--delay, 0ms);
   --color-sidebar-ring: var(--sidebar-ring);
